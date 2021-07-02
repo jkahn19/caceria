@@ -1,0 +1,55 @@
+Nombre,N1,N2,N3,N4,Puntaje
+ lordkanino19,6,8,0,0,22
+ kingalexx27,17,0,0,0,17
+ dyk12,10,0,0,0,10
+ theriver2007,12,0,0,0,12
+ ca0sss,5,0,0,0,5
+ 001padre,8,0,0,0,8
+ vizconde puf,6,0,0,0,6
+ mmark,4,0,0,0,4
+ gadriels,6,0,0,0,6
+ juan d98,5,9,2,0,55
+ king beti001,2,0,0,0,2
+ br1mrcelo,11,4,0,0,19
+ diofanto,21,2,0,0,25
+ jose rosario,13,1,0,0,15
+ oscar asis04,11,0,0,0,11
+ jesus1478 3,1,0,0,0,1
+ vainilla,19,2,0,0,23
+ xacobeo21,13,0,0,0,13
+ deathiro,0,7,0,0,14
+ jocs4,12,1,0,0,14
+ versachi,4,3,0,0,10
+ joselito170,4,0,0,0,4
+ carolus6,7,0,0,0,7
+ rp d,9,4,1,0,33
+ zionhated,4,0,0,0,4
+ zionburn,7,0,0,0,7
+ 97azteca97,0,2,0,0,4
+ nathy7,8,0,0,0,8
+ king betio01,5,0,0,0,5
+ chuki 03,9,0,0,0,9
+ sathariel 69,17,0,0,0,17
+ wirito,3,0,0,0,3
+ hirowiro,3,0,0,0,3
+ n4 versachi,6,4,0,0,14
+ xxaztecaxx1,7,1,0,0,9
+rpd,9,3,0,0,15
+ elver,8,0,0,0,8
+ morriganc,10,6,1,0,38
+ jesus1479,1,0,0,0,1
+ carlos ecf,2,0,0,0,2
+ ziondies,7,0,0,0,7
+ eraclium,3,0,0,0,3
+ bri1mrcelo,1,0,0,0,1
+ srcel,4,0,0,0,4
+ djkead,1,0,0,0,1
+ gracy lu,1,0,0,0,1
+ el negro vnz,4,0,0,0,4
+ lord king28,1,0,0,0,1
+ freya2111,1,0,0,0,1
+ zlonhated,1,0,0,0,1
+ sternercrono,2,0,0,0,2
+ sternercrons,2,0,0,0,2
+ eracllum,1,0,0,0,1
+ lady kastrel,1,0,0,0,1

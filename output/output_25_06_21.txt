@@ -1,0 +1,52 @@
+Nombre,N1,N2,N3,Puntaje
+ lordkanino19,10,2,1,30
+ ca0sss,2,0,0,2
+ juan d98,6,2,0,10
+ rp d,2,0,0,2
+rpd,10,0,0,10
+ theriver2007,4,0,0,4
+ vd versachi,3,0,0,3
+ vizconde puf,3,0,0,3
+ n4 versachi,10,0,0,10
+ na versachi,1,0,0,1
+ freya2111,4,0,0,4
+ xxaztecaxx1,1,0,0,1
+ dyk12,3,0,0,3
+ sam 1101,1,0,0,1
+ elver,7,0,0,7
+ kingalexx27,6,0,0,6
+ vil mentira,12,1,0,14
+ srcel,2,0,0,2
+ kinichi,2,0,0,2
+ 001padre,2,0,0,2
+ joselito170,2,0,0,2
+ ziondies,7,0,0,7
+ jocs4,11,0,0,11
+ jose rosario,2,0,0,2
+ king betio01,1,0,0,1
+ eraclium,2,0,0,2
+ zionhated,2,0,0,2
+ zionburn,2,0,0,2
+ jesus1478 3,3,0,0,3
+ adadi,1,0,0,1
+ claudilal,4,4,0,12
+ carlos ecf,2,0,0,2
+ mmark,3,0,0,3
+ br1mrcelo,6,0,0,6
+ wirito,0,1,0,2
+ gadriels,1,0,0,1
+ golemcito24,4,0,0,4
+ chuki 03,2,0,0,2
+ vainilla,1,0,0,1
+ deathiro,0,1,0,2
+ gracy lu,1,0,0,1
+ nathy7,3,0,0,3
+ 97azteca97,2,0,0,2
+ ghost011,2,1,0,4
+ leap 16,1,0,0,1
+ carolus6,1,0,0,1
+ xacobeo21,2,0,0,2
+ sternercrono,1,0,0,1
+ eracllum,1,0,0,1
+ djkead,1,0,0,1
+ bri1mrcelo,1,0,0,1
