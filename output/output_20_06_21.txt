@@ -1,0 +1,43 @@
+Nombre,N1,N2,N3,Puntaje
+ lordkanino19,6,3,1,28
+ chuki 03,5,0,0,5
+ vainilla,4,2,0,8
+ elver,2,0,0,2
+ jesus1478 3,1,0,0,1
+ kinichi,1,0,0,1
+ zionhated,3,0,0,3
+ srcel,1,0,0,1
+ nathy7,3,0,0,3
+ freya2111,5,0,0,5
+ theriver2007,3,0,0,3
+ jocs4,12,0,0,12
+ rp d,2,0,0,2
+ dyk12,3,1,0,5
+ br1mrcelo,8,1,0,10
+ ziondies,4,0,0,4
+ sam 1101,3,0,0,3
+ ca0sss,2,0,0,2
+ king betio01,1,0,0,1
+ zionburn,3,0,0,3
+ golemcito24,6,0,0,6
+ joselito170,1,0,0,1
+ jose rosario,4,0,0,4
+ juan d98,8,1,0,10
+ eraclium,1,0,0,1
+rpd,3,0,0,3
+ vizconde puf,1,0,0,1
+ claudiial,4,1,0,6
+ vd versachi,1,1,0,3
+ n4 versachi,3,1,0,5
+ vil mentira,6,1,0,8
+ kingalexx27,12,0,0,12
+ sternercrons,1,0,0,1
+ xacobeo21,1,0,0,1
+ 001padre,3,0,0,3
+ leap 16,1,0,0,1
+ gadriels,1,0,0,1
+ mmark,1,0,0,1
+ 97azteca97,0,1,0,2
+ na versachi,0,1,0,2
+ xxaztecaxx1,1,0,0,1
+ adadi,1,0,0,1

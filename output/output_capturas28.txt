@@ -1,0 +1,64 @@
+Nombre,N1,N2,N3,N4,Puntaje
+ oscar asis04,19,2,0,0,23
+ vainilla,23,7,0,0,37
+ srcel,9,0,0,0,9
+ djkead,2,0,0,0,2
+ carlos ecf,2,0,0,0,2
+ jose rosario,21,0,0,0,21
+ lady kastrel,4,0,0,0,4
+ dolly lady,1,0,0,0,1
+ rp d,22,3,0,0,28
+ ca0sss,8,0,0,0,8
+ gracy lu,1,0,0,0,1
+ theriver2007,21,0,0,0,21
+ elver,15,0,0,0,15
+ xacobeo21,17,0,0,0,17
+ vil mentira,24,2,0,0,28
+ juan d98,9,15,3,0,87
+ ziondies,14,0,0,0,14
+ 001padre,28,1,0,0,30
+ hirowiro,10,1,0,0,12
+ br1mrcelo,39,0,0,0,39
+ chuki 03,15,0,0,0,15
+ wirito,11,1,0,0,13
+ zionhated,7,0,0,0,7
+ jocs4,34,2,0,0,38
+ deathiro,3,10,2,0,55
+ carolus6,20,2,0,0,24
+ gadriels,7,0,0,0,7
+rpd,20,0,1,0,36
+ lordkanino19,23,8,0,0,39
+ sathariel 69,32,0,0,0,32
+ dyk12,24,0,0,0,24
+ 97azteca97,0,7,0,0,14
+ bri1mrcelo,4,0,0,0,4
+ claudilal,6,5,0,0,16
+ kingalexx27,16,1,0,0,18
+ xxaztecaxx1,3,0,0,0,3
+ mmark,8,0,0,0,8
+ nathy7,17,0,0,0,17
+ eraclium,5,1,0,0,7
+ n4 versachi,25,3,0,0,31
+ zlondies,3,0,0,0,3
+ adadi,6,0,0,0,6
+ vizconde puf,10,0,0,0,10
+ king betio01,6,0,0,0,6
+ sternercrons,1,0,0,0,1
+ joselito170,4,0,0,0,4
+ jesus1478 3,4,0,0,0,4
+ kinichi,5,0,0,0,5
+ zionburn,4,0,0,0,4
+ eracllum,2,0,0,0,2
+ diofanto,13,0,0,0,13
+ freya2111,5,0,0,0,5
+ vd versachi,2,0,0,0,2
+ el negro vnz,3,0,0,0,3
+ versachi,7,3,0,0,13
+ lord king28,1,0,0,0,1
+ claudiial,2,1,0,0,4
+ zlonburn,3,0,0,0,3
+ jesus1479,1,0,0,0,1
+ 001padre2,2,0,0,0,2
+ zlonhated,1,0,0,0,1
+ king beti001,4,0,0,0,4
+ sternercrono,1,0,0,0,1
