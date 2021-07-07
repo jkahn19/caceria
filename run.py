@@ -1,6 +1,7 @@
 from src.abrir import *
 from src.imagenes import *
 import pandas as pd
+import re
 
 palabras_claves = ['botin de', 'regalo de']
 diccionario_nivel = {'comun': 1, 'poco comun': 2, 'raro': 3, 'epico': 4}
@@ -141,9 +142,38 @@ def puntaje(data):
 
     return dataframe
 
+def depurar_nombre(name):
+    newname = name.strip()
+    newname = re.sub(r'[0-9]+', '', newname)
+    newname = newname.replace(' ','')
+    return newname
+
+def depurar(df):
+    list_name = df['Nombre'].to_list()
+    list_filtername = []
+
+    for i in range(len(list_name)):
+        newname = depurar_nombre(list_name[i])
+        if not newname in list_filtername:
+            list_filtername.append(newname)
+    
+    df_filter = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4', 'Puntaje'])
+    df_filter['Nombre'] = list_filtername
+    df_filter['N1'] = 0
+    df_filter['N2'] = 0
+    df_filter['N3'] = 0
+    df_filter['N4'] = 0
+    df_filter['Puntaje'] = 0
+
+    for name in list_name:
+        df_filter.loc[df_filter['Nombre']==depurar_nombre(name),['N1', 'N2', 'N3', 'N4', 'Puntaje']] += np.sum(df.loc[df['Nombre']==name,['N1', 'N2', 'N3', 'N4', 'Puntaje']].values.tolist(), axis=0)
+
+    return df_filter
+
+
 def main():
     global lista_de_imagenes
-    foldername = 'jun30'
+    foldername = 'cap_jul7'
     print('>>> Exportando nombres de la carpeta %s'%foldername)
     lista_de_imagenes = directorio_img('./%s/'%foldername)
     print('>>> Reconociendo Texto de las Imagenes ...')
@@ -151,6 +181,7 @@ def main():
     print('>>> Procesando')
     data = contar(cadena_textos_original, cadena_textos)
     dataframe = puntaje(data)
+    dataframe = depurar(dataframe)
     dataframe.to_csv('./output/output_%s.txt'%foldername,index=False)
     print(dataframe)
 
