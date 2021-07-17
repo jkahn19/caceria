@@ -89,7 +89,7 @@ def conteo_imagen(string_imagen_original, string_imagen):
             conteo.append([nombre_jugador,nivel_botin])
         error = True
     except:
-        print('********** error **********')
+        error = False
     return conteo, error
 
 def contar(cadena_textos_original, cadena_textos):
@@ -104,8 +104,7 @@ def contar(cadena_textos_original, cadena_textos):
             data += data_img
         else:
             img_error.append(lista_de_imagenes[i])
-            print(lista_de_imagenes[i])
-            print('********** error **********')
+            print('>>> WARNNING : No se pudo reconocer el texto de %s\n'%lista_de_imagenes[i])
 
     data_frame = pd.DataFrame(data, columns = ['Nombre', 'Rareza'])
 
@@ -176,18 +175,18 @@ def depurar(df):
 
 def main():
     global lista_de_imagenes
-    foldername = 'cap_jul16'
+    foldername = 'cap_jul17'
     print('>>> Exportando nombres de la carpeta %s'%foldername)
     lista_de_imagenes = directorio_img('./%s/'%foldername)
     print('>>> Reconociendo Texto de las Imagenes ...')
     cadena_textos_original, cadena_textos = generar_cadena_textos(lista_de_imagenes)
-    print('>>> Procesando')
+    print('>>> Procesando\n')
     data, img_error = contar(cadena_textos_original, cadena_textos)
     print('>>> Conteo de caceria')
     dataframe = puntaje(data)
     dataframe = depurar(dataframe)
     print('>>> Guardando Resultados')
-    dataframe.to_csv('./output/output_%s.txt'%foldername,index=False)
+    dataframe.to_csv('./output/output_%s.txt'%foldername, index=False)
     n_error = len(img_error)
     if n_error != 0:
         # create error folder and move the images to the error folder
