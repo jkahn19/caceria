@@ -2,6 +2,7 @@ from src.abrir import *
 from src.imagenes import *
 import pandas as pd
 import re
+import os
 
 palabras_claves = ['botin de', 'regalo de']
 diccionario_nivel = {'comun': 1, 'poco comun': 2, 'raro': 3, 'epico': 4}
@@ -94,6 +95,7 @@ def conteo_imagen(string_imagen_original, string_imagen):
 def contar(cadena_textos_original, cadena_textos):
     global lista_de_imagenes
     data = []
+    img_error = []
 
     for i in range(len(cadena_textos)):
         #print('proceso %i/%i'%(i,len(cadena_textos)))
@@ -101,12 +103,13 @@ def contar(cadena_textos_original, cadena_textos):
         if agregar_bol:
             data += data_img
         else:
+            img_error.append(lista_de_imagenes[i])
             print(lista_de_imagenes[i])
             print('********** error **********')
 
     data_frame = pd.DataFrame(data, columns = ['Nombre', 'Rareza'])
 
-    return data_frame
+    return data_frame, img_error
 
 def puntaje(data):
     dataframe = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4', 'Puntaje'])
@@ -173,16 +176,23 @@ def depurar(df):
 
 def main():
     global lista_de_imagenes
-    foldername = 'cap_jul7'
+    foldername = 'cap_jul16'
     print('>>> Exportando nombres de la carpeta %s'%foldername)
     lista_de_imagenes = directorio_img('./%s/'%foldername)
     print('>>> Reconociendo Texto de las Imagenes ...')
     cadena_textos_original, cadena_textos = generar_cadena_textos(lista_de_imagenes)
     print('>>> Procesando')
-    data = contar(cadena_textos_original, cadena_textos)
+    data, img_error = contar(cadena_textos_original, cadena_textos)
+    print('>>> Conteo de caceria')
     dataframe = puntaje(data)
     dataframe = depurar(dataframe)
+    print('>>> Guardando Resultados')
     dataframe.to_csv('./output/output_%s.txt'%foldername,index=False)
+    if len(img_error) != 0:
+        # create error folder and move the images to the error folder
+        print('>>> Moviendo Imagenes que no se pueden reconocer')
+        os.mkdir('./%s/error'%foldername)
+        print(img_error)
     print(dataframe)
 
 if __name__ == '__main__':
