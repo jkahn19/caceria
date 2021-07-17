@@ -188,12 +188,21 @@ def main():
     dataframe = depurar(dataframe)
     print('>>> Guardando Resultados')
     dataframe.to_csv('./output/output_%s.txt'%foldername,index=False)
-    if len(img_error) != 0:
+    n_error = len(img_error)
+    if n_error != 0:
         # create error folder and move the images to the error folder
-        print('>>> Moviendo Imagenes que no se pueden reconocer')
-        os.mkdir('./%s/error'%foldername)
-        print(img_error)
-    print(dataframe)
+        print('>>> Moviendo Imagenes que no se pueden reconocer a la carpeta error')
+        try:
+            os.mkdir('./%s/error'%foldername)
+        except OSError as error:
+            print(">>> La carpeta './%s/error' ya existe "%foldername)
+        for i in range(n_error):
+            try:
+                os.rename(img_error[i], img_error[i].replace('%s'%foldername, '%s/error'%(foldername)))
+            except OSError as error:
+                print('>>> WARNNING: verificar %s'%img_error[i])
+        print('>>> Imagenes que no se han contado han sido reubicada en ./%s/error'%(foldername))
+    #print(dataframe)
 
 if __name__ == '__main__':
     main()
