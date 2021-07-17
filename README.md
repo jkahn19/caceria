@@ -1,2 +1,2 @@
-# caceria
-projecto para contar caceria automatica en lord mobile a traves de procesar imagenes
+# cacería
+projecto para contar cacería automática en lord mobile a través de procesar imágenes
