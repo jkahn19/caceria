@@ -4,6 +4,14 @@ import pandas as pd
 import re
 import os
 
+import argparse as ap
+
+parser = ap.ArgumentParser(description='Conteo de Imagenesde caceria de Lord Mobile')
+
+parser.add_argument('-f', '--folder', dest="foldername", default='test', type=str, help='Nombre del folder')
+args = parser.parse_args()
+
+
 palabras_claves = ['botin de', 'regalo de']
 diccionario_nivel = {'comun': 1, 'poco comun': 2, 'raro': 3, 'epico': 4}
 puntaje = {1:1, 2:4, 3:16}
@@ -146,7 +154,7 @@ def puntaje(data):
 
 def depurar_nombre(name):
     newname = name.strip()
-    newname = re.sub(r'[0-9]+', '', newname)
+    #newname = re.sub(r'[0-9]+', '', newname)
     newname = newname.replace(' ','')
     return newname
 
@@ -173,9 +181,9 @@ def depurar(df):
     return df_filter
 
 
-def main():
+def main(args):
     global lista_de_imagenes
-    foldername = 'cap_jul17'
+    foldername = args.foldername
     print('>>> Exportando nombres de la carpeta %s'%foldername)
     lista_de_imagenes = directorio_img('./%s/'%foldername)
     print('>>> Reconociendo Texto de las Imagenes ...')
@@ -201,7 +209,7 @@ def main():
             except OSError as error:
                 print('>>> WARNNING: verificar %s'%img_error[i])
         print('>>> Imagenes que no se han contado han sido reubicada en ./%s/error'%(foldername))
-    #print(dataframe)
+    # print(dataframe)
 
 if __name__ == '__main__':
-    main()
+    main(args)
