@@ -4,6 +4,9 @@ import pandas as pd
 import re
 import os
 
+#from difflib import SequenceMatcher as S
+import difflib
+
 import argparse as ap
 
 parser = ap.ArgumentParser(description='Conteo de Imagenesde caceria de Lord Mobile')
@@ -16,6 +19,10 @@ palabras_claves = ['botin de', 'regalo de']
 diccionario_nivel = {'comun': 1, 'poco comun': 2, 'raro': 3, 'epico': 4}
 puntaje = {1:1, 2:4, 3:16}
 lista_de_imagenes = []
+
+filename_miembros = './data/miembros-D_S.csv'
+df_D_S = pd.read_csv(filename_miembros)
+
 
 def generar_cadena_textos(list_img):    
     candenas_texto_original = []
@@ -119,15 +126,18 @@ def contar(cadena_textos_original, cadena_textos):
     return data_frame, img_error
 
 def puntaje(data):
-    dataframe = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4', 'Puntaje'])
+    dataframe = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4', 'Total', 'Puntaje'])
     dataframe['Nombre'] = data['Nombre'].unique()
+    dataframe['Total'] = 0
     dataframe['Puntaje'] = 0
+
 
     for nombre in dataframe['Nombre']:
         numero_n1 = 0
         numero_n2 = 0
         numero_n3 = 0
         numero_n4 = 0
+        total = 0
         valor_puntaje = 0
 
         for valor in data[data['Nombre'] == nombre]['Rareza']:
@@ -143,40 +153,49 @@ def puntaje(data):
             elif valor == 4:
                 numero_n4 += 1
                 valor_puntaje += 64
-        
+        total = numero_n1 + numero_n2 + numero_n3 + numero_n4
+
         dataframe.loc[dataframe['Nombre'] == nombre, 'N1'] = numero_n1
         dataframe.loc[dataframe['Nombre'] == nombre, 'N2'] = numero_n2
         dataframe.loc[dataframe['Nombre'] == nombre, 'N3'] = numero_n3
         dataframe.loc[dataframe['Nombre'] == nombre, 'N4'] = numero_n4
+        dataframe.loc[dataframe['Nombre'] == nombre, 'Total'] = total
         dataframe.loc[dataframe['Nombre'] == nombre, 'Puntaje'] = valor_puntaje
 
     return dataframe
 
 def depurar_nombre(name):
     newname = name.strip()
-    #newname = re.sub(r'[0-9]+', '', newname)
+    newname = re.sub(r'[.%+-]+', '', newname)
     newname = newname.replace(' ','')
+    newname = newname.lower()
     return newname
 
-def depurar(df):
-    list_name = df['Nombre'].to_list()
-    list_filtername = []
+def depurar(data):
+    global df_D_S
+    miembros = [nombre.lower() for nombre in df_D_S['Nombre'].to_list()]
+    lista_caceria = data['Nombre'].to_list()
 
-    for i in range(len(list_name)):
-        newname = depurar_nombre(list_name[i])
-        if not newname in list_filtername:
-            list_filtername.append(newname)
-    
-    df_filter = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4', 'Puntaje'])
-    df_filter['Nombre'] = list_filtername
+    df_filter = pd.DataFrame([], columns=['Nombre', 'N1', 'N2', 'N3', 'N4','Total', 'Puntaje'])
+    df_filter['Nombre'] = df_D_S['Nombre']
     df_filter['N1'] = 0
     df_filter['N2'] = 0
     df_filter['N3'] = 0
     df_filter['N4'] = 0
+    df_filter['Total'] = 0
     df_filter['Puntaje'] = 0
 
-    for name in list_name:
-        df_filter.loc[df_filter['Nombre']==depurar_nombre(name),['N1', 'N2', 'N3', 'N4', 'Puntaje']] += np.sum(df.loc[df['Nombre']==name,['N1', 'N2', 'N3', 'N4', 'Puntaje']].values.tolist(), axis=0)
+    rango = ['N1', 'N2', 'N3', 'N4','Total', 'Puntaje']
+    for name in lista_caceria:
+        name_coincidencia = difflib.get_close_matches(depurar_nombre(name), possibilities = miembros, n=1, cutoff = 0.6)[0]
+        filtro = df_filter['Nombre'].apply(lambda s: s.lower() if type(s) == str else s)==name_coincidencia
+        valores = data.loc[data['Nombre']==name]
+        df_filter.loc[filtro, 'N1'] += valores['N1'].values[0]
+        df_filter.loc[filtro, 'N2'] += valores['N2'].values[0]
+        df_filter.loc[filtro, 'N3'] += valores['N3'].values[0]
+        df_filter.loc[filtro, 'N4'] += valores['N4'].values[0]
+        df_filter.loc[filtro, 'Total'] += valores['Total'].values[0]
+        df_filter.loc[filtro, 'Puntaje'] += valores['Puntaje'].values[0]
 
     return df_filter
 
@@ -209,7 +228,6 @@ def main(args):
             except OSError as error:
                 print('>>> WARNNING: verificar %s'%img_error[i])
         print('>>> Imagenes que no se han contado han sido reubicada en ./%s/error'%(foldername))
-    # print(dataframe)
 
 if __name__ == '__main__':
     main(args)
