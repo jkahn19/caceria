@@ -1,9 +1,10 @@
 Nombre,N1,N2,N3,N4,Total,Puntaje
 Vainilla,4,0,0,0,4,4
 Br1Mrcelo,5,1,0,0,6,7
-LordKanino19,3,3,0,0,6,9
+LordKanino19,3,5,1,0,9,33
 R P D,0,1,0,0,1,2
 212D,1,1,0,0,2,3
+SS Versachi,0,0,0,0,0,0
 AntiZion,5,0,0,0,5,5
 Conde Puf,6,0,0,0,6,6
 deathiro,0,2,0,0,2,4
@@ -13,13 +14,14 @@ hirowiro,4,0,0,0,4,4
 Jocs4,0,2,0,0,2,4
 MoRRiGaNC,0,0,0,0,0,0
 N4 Versachi,0,2,0,0,2,4
-Nathy7,6,0,0,0,6,6
+Nathy7,8,0,0,0,8,8
 SAM 1101,2,0,0,0,2,2
 Sathariel 69,12,0,0,0,12,12
+Arkeus11,0,0,0,0,0,0
 wirito,4,0,0,0,4,4
 001padre,8,0,0,0,8,8
 001padre2,0,0,0,0,0,0
-DyK12,5,1,0,0,6,7
+DyK12,6,1,0,0,7,8
 e1ver,4,0,0,0,4,4
 Freya2111,1,0,0,0,1,1
 GadrielS,2,0,0,0,2,2
@@ -42,3 +44,6 @@ MiguelDH,2,0,0,0,2,2
 Mmark,2,0,0,0,2,2
 XxCrisbelyxX,0,0,0,0,0,0
 yeison 27,1,0,0,0,1,1
+Kikiri43,0,0,0,0,0,0
+CL Giao Giao,0,0,0,0,0,0
+akiles bailo,0,0,0,0,0,0

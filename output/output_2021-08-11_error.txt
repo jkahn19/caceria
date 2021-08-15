@@ -1,0 +1,49 @@
+Nombre,N1,N2,N3,N4,Total,Puntaje
+Vainilla,1,0,0,0,1,1
+Br1Mrcelo,6,0,1,0,7,22
+LordKanino19,9,4,3,0,16,65
+R P D,0,4,2,0,6,40
+212D,0,0,0,0,0,0
+SS Versachi,4,1,0,0,5,6
+AntiZion,5,0,0,0,5,5
+Conde Puf,2,0,0,0,2,2
+deathiro,0,3,0,0,3,6
+Diofanto,6,1,0,0,7,8
+El Templari0,4,0,0,0,4,4
+hirowiro,3,0,0,0,3,3
+Jocs4,4,1,0,0,5,6
+MoRRiGaNC,0,0,0,0,0,0
+N4 Versachi,1,2,0,0,3,5
+Nathy7,4,0,0,0,4,4
+SAM 1101,1,0,0,0,1,1
+Sathariel 69,0,0,0,0,0,0
+Arkeus11,10,0,0,0,10,10
+wirito,3,0,0,0,3,3
+001padre,0,0,0,0,0,0
+001padre2,0,0,0,0,0,0
+DyK12,10,0,0,0,10,10
+e1ver,2,0,0,0,2,2
+Freya2111,0,0,0,0,0,0
+GadrielS,4,0,0,0,4,4
+HaRaKirY,0,0,0,0,0,0
+Jesus1478 3,1,0,0,0,1,1
+Jesus1479,0,0,0,0,0,0
+Joselito170,3,0,0,0,3,3
+JuanD98,0,6,2,0,8,44
+KingAlexx27,7,0,0,0,7,7
+srce1,4,0,0,0,4,4
+theriver2007,6,0,0,0,6,6
+Xacobeo21,6,0,0,0,6,6
+YxXSimbaxXY,1,0,0,0,1,1
+ADADI,0,0,0,0,0,0
+ca0sss,3,0,0,0,3,3
+carlos ecf,0,0,0,0,0,0
+Eraclium,2,0,0,0,2,2
+jose rosario,7,1,0,0,8,9
+MiguelDH,1,0,0,0,1,1
+Mmark,0,0,0,0,0,0
+XxCrisbelyxX,0,0,0,0,0,0
+yeison 27,1,0,0,0,1,1
+Kikiri43,1,0,0,0,1,1
+CL Giao Giao,2,1,0,0,3,4
+akiles bailo,0,0,0,0,0,0

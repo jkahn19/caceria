@@ -1,0 +1,49 @@
+Nombre,N1,N2,N3,N4,Total,Puntaje
+Vainilla,9,1,0,0,10,11
+Br1Mrcelo,11,1,0,0,12,13
+LordKanino19,13,6,0,0,19,27
+R P D,0,7,3,0,10,62
+212D,0,2,0,0,2,4
+SS Versachi,0,0,0,0,0,0
+AntiZion,3,0,0,0,3,3
+Conde Puf,9,0,0,0,9,9
+deathiro,0,0,1,0,1,16
+Diofanto,4,3,0,0,7,10
+El Templari0,4,0,0,0,4,4
+hirowiro,6,0,0,0,6,6
+Jocs4,10,1,0,0,11,12
+MoRRiGaNC,0,0,0,0,0,0
+N4 Versachi,2,3,0,0,5,8
+Nathy7,4,0,0,0,4,4
+SAM 1101,3,0,0,0,3,3
+Sathariel 69,13,0,0,0,13,13
+Arkeus11,0,0,0,0,0,0
+wirito,5,0,0,0,5,5
+001padre,5,0,0,0,5,5
+001padre2,1,0,0,0,1,1
+DyK12,13,0,0,0,13,13
+e1ver,7,0,0,0,7,7
+Freya2111,0,0,0,0,0,0
+GadrielS,4,0,0,0,4,4
+HaRaKirY,0,0,0,0,0,0
+Jesus1478 3,1,0,0,0,1,1
+Jesus1479,1,0,0,0,1,1
+Joselito170,3,0,0,0,3,3
+JuanD98,0,0,2,0,2,32
+KingAlexx27,0,0,0,0,0,0
+srce1,2,0,0,0,2,2
+theriver2007,11,0,0,0,11,11
+Xacobeo21,6,0,0,0,6,6
+YxXSimbaxXY,8,0,0,0,8,8
+ADADI,0,0,0,0,0,0
+ca0sss,7,0,0,0,7,7
+carlos ecf,1,0,0,0,1,1
+Eraclium,6,0,0,0,6,6
+jose rosario,2,1,0,0,3,4
+MiguelDH,1,0,0,0,1,1
+Mmark,1,0,0,0,1,1
+XxCrisbelyxX,0,0,0,0,0,0
+yeison 27,1,0,0,0,1,1
+Kikiri43,2,0,0,0,2,2
+CL Giao Giao,1,0,0,0,1,1
+akiles bailo,0,0,0,0,0,0
