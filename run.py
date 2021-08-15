@@ -12,6 +12,7 @@ import argparse as ap
 parser = ap.ArgumentParser(description='Conteo de Imagenesde caceria de Lord Mobile')
 
 parser.add_argument('-f', '--folder', dest="foldername", default='test', type=str, help='Nombre del folder')
+parser.add_argument('-e', '--error', dest="falgerror", default=False, type=bool, action=ap.BooleanOptionalAction, help='Flag para agregar las imagenes no contabilizadas')
 args = parser.parse_args()
 
 
@@ -187,18 +188,49 @@ def depurar(data):
 
     rango = ['N1', 'N2', 'N3', 'N4','Total', 'Puntaje']
     for name in lista_caceria:
-        name_coincidencia = difflib.get_close_matches(depurar_nombre(name), possibilities = miembros, n=1, cutoff = 0.6)[0]
-        filtro = df_filter['Nombre'].apply(lambda s: s.lower() if type(s) == str else s)==name_coincidencia
-        valores = data.loc[data['Nombre']==name]
-        df_filter.loc[filtro, 'N1'] += valores['N1'].values[0]
-        df_filter.loc[filtro, 'N2'] += valores['N2'].values[0]
-        df_filter.loc[filtro, 'N3'] += valores['N3'].values[0]
-        df_filter.loc[filtro, 'N4'] += valores['N4'].values[0]
-        df_filter.loc[filtro, 'Total'] += valores['Total'].values[0]
-        df_filter.loc[filtro, 'Puntaje'] += valores['Puntaje'].values[0]
+        name_coincidencia = difflib.get_close_matches(depurar_nombre(name), possibilities = miembros, n=1, cutoff = 0.6)
+        if len(name_coincidencia) == 0:
+            print('>> WARNNING: nombre no encontrad%s'%name)
+        else:
+            name_coincidencia = name_coincidencia[0]
+            filtro = df_filter['Nombre'].apply(lambda s: s.lower() if type(s) == str else s)==name_coincidencia
+            valores = data.loc[data['Nombre']==name]
+            df_filter.loc[filtro, 'N1'] += valores['N1'].values[0]
+            df_filter.loc[filtro, 'N2'] += valores['N2'].values[0]
+            df_filter.loc[filtro, 'N3'] += valores['N3'].values[0]
+            df_filter.loc[filtro, 'N4'] += valores['N4'].values[0]
+            df_filter.loc[filtro, 'Total'] += valores['Total'].values[0]
+            df_filter.loc[filtro, 'Puntaje'] += valores['Puntaje'].values[0]
 
     return df_filter
 
+
+def add_error(args):
+    try:
+        df = pd.read_csv('./output/output_%s.txt'%args.foldername)
+    except FileNotFoundError as e:
+        print(e)
+        print('>>> Comenzando por el conteo de imagenes')
+        main(args)
+        df = pd.read_csv('./output/output_%s.txt'%args.foldername)
+    
+    try:
+        df_error = pd.read_csv('./%s/error/error.txt'%args.foldername)
+
+        for name in df_error['Nombre'].values:
+            filtro = df['Nombre'] == name
+            valores = df_error.loc[df_error['Nombre']==name]
+            df.loc[filtro, 'N1'] += valores['N1'].values[0]
+            df.loc[filtro, 'N2'] += valores['N2'].values[0]
+            df.loc[filtro, 'N3'] += valores['N3'].values[0]
+            df.loc[filtro, 'N4'] += valores['N4'].values[0]
+            df.loc[filtro, 'Total'] += valores['Total'].values[0]
+            df.loc[filtro, 'Puntaje'] += valores['Puntaje'].values[0]
+
+        df.to_csv('./output/output_%s_error.txt'%args.foldername, index=False)
+    except FileNotFoundError as e:
+        print(e)
+        return 0
 
 def main(args):
     global lista_de_imagenes
@@ -230,4 +262,8 @@ def main(args):
         print('>>> Imagenes que no se han contado han sido reubicada en ./%s/error'%(foldername))
 
 if __name__ == '__main__':
-    main(args)
+    if not args.falgerror:
+        main(args)
+    else:
+        add_error(args)
+        
