@@ -1,3 +1,10 @@
+:root{
+    --dark-cyan: #015249;
+    --soft-cyan: #77C9D4;
+    --cyan: #57BC90;
+    --gray: #A5A5AF;
+  }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,17 +14,220 @@
 html {
     font-size: 62.5%;
     font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
 }
 
 header {
-
+    display: flex;
+    width: auto;
+    height: 80px;
+    background-color: var(--dark-cyan);
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    font-size: 30px;
+}
+
+.gremio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+}
+
+.gremio-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.gremio-logo img {
+    width: 50px;
+    height: auto;
+}
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
 
+.Hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 270px;
+}
+
+.Hero figure {
+    height: 75px;
+    width: auto;
+}
+
+.Hero figure img {
+    height: 75px;
+}
+
+.lider-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    background-color: var(--soft-cyan);
+    border-radius: 25px;
+    margin: 20px;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.lider {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.lider figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+
+.lider figure img {
+    width: 40px;
+    height: auto;
+}
+
+.lider h2 {
+    width: 60%;
+}
+
+.Descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.Descripcion-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    background: linear-gradient(180deg,var(--dark-cyan) 18.5%, var(--cyan) 100%);
+    font-size: 1.2rem;
+}
+
+.Descripcion-contenido div {
+    width: 80%;
+}
+
+.Descripcion-titulo, .Descripcion-aliados, .Descripcion-perfil {
+    margin: 10px;
+}
+
+.Descripcion-emblema {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.Descripcion-emblema figure {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
+.Descripcion-emblema figure img{
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    margin: 20px;
+    width: 80%;
+}
+
+.Tarjeta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+.Tarjeta-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100px;
+    border-radius: 25px;
+    margin: 20px;
+    background-color: var(--soft-cyan);
+}
+
+.Tarjeta-contenedor figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+}
+
+.Tarjeta-contenedor figure img{ 
+    width: 75px;
+    height: 75px;
+}
+
+.Tarjeta-contenedor p {
+    width: 60%;
+    font-size: 2rem;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.redSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    width: 50%;
+    height: 100%;
+    background-color: var(--dark-cyan);
+}
+
+.redSocial div {
+    margin: 10px;
+    font-size: 30px;
+}
+
+.redSocial p {
+    margin: 5px;
+    text-align: center;
+    font-size: 1.2rem;
 }
