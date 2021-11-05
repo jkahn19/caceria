@@ -1,0 +1,61 @@
+Nombre,N1,N2,N3,N4,Total,Puntaje
+LordKanino19,13,5,0,0,18,33
+Vainilla,4,0,0,0,4,4
+R P D,0,0,0,0,0,0
+Jocs4,2,2,0,0,4,10
+Juan D98,0,0,3,1,4,112
+61JC,4,0,0,0,4,4
+Arkeus11,7,0,0,0,7,7
+Dark Falkor,10,0,0,0,10,10
+deathiro,0,0,1,0,1,16
+Duque Puf,4,0,0,0,4,4
+Conde Puf,0,0,0,0,0,0
+Marques Puf,0,0,0,0,0,0
+El Templari0,9,0,0,0,9,9
+FoodFarmer12,0,0,0,0,0,0
+HaRaKirY,0,0,0,0,0,0
+hirowiro,0,0,0,0,0,0
+HusKerss,0,0,0,0,0,0
+Joselito170,5,0,0,0,5,5
+L O N E Y 5,0,0,0,0,0,0
+MoRRiGaNC,0,0,0,0,0,0
+Nathy7,7,1,0,0,8,11
+Rpd2,1,3,4,0,8,77
+srce1,3,0,0,0,3,3
+theriver2007,16,1,0,0,17,20
+Vil Mentira,0,3,0,0,3,12
+wirito,0,0,0,0,0,0
+001padre,3,0,1,0,4,19
+el poro 123,6,0,0,0,6,6
+KingAlexx27,7,1,0,0,8,11
+Leandro2505,0,0,0,0,0,0
+leito ortiz,4,1,0,0,5,8
+leonardo02,1,0,0,0,1,1
+melonidas 1,8,0,0,0,8,8
+MiguelDH,2,0,0,0,2,2
+WOLFBYCK9812,2,0,0,0,2,2
+001padre2,0,0,0,0,0,0
+ADADI,2,0,0,0,2,2
+adolfo22,0,0,0,0,0,0
+Anabell 21,2,3,0,0,5,14
+auxiliar 1,1,0,0,0,1,1
+Eraclium,0,2,0,0,2,8
+Freya2111,0,0,0,0,0,0
+GadrielS,2,0,0,0,2,2
+GalaicusGZ,3,0,0,0,3,3
+Goku 32,2,0,0,0,2,2
+Hogan bob,0,0,0,0,0,0
+Imp0st0r 882,7,2,0,0,9,15
+jos88,0,0,0,0,0,0
+jungle 01,2,0,0,0,2,2
+Jvillafuerte,0,0,0,0,0,0
+kim jennie06,0,0,0,0,0,0
+LOBO SERVERO,0,4,0,0,4,16
+lord dan49,0,0,0,0,0,0
+LordSerged,0,0,0,0,0,0
+MarisolXD123,0,0,0,0,0,0
+MaRk 25,0,0,0,0,0,0
+Mmark,0,0,0,0,0,0
+Roohtakr,0,0,0,0,0,0
+SoloGozalo,5,0,0,0,5,5
+vaspin,1,0,0,0,1,1
