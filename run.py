@@ -25,7 +25,7 @@ filename_miembros = './data/miembros-D_S.csv'
 df_D_S = pd.read_csv(filename_miembros)
 
 
-def generar_cadena_textos(list_img):    
+def generar_cadena_textos(list_img):
     candenas_texto_original = []
     candenas_texto = []
 
@@ -58,7 +58,7 @@ def conteo_imagen(string_imagen_original, string_imagen):
             botin_gris.append(linea.strip())
         if palabras_claves[1] in linea:
             regalo_gris.append(linea.strip())
-    
+
     n_max = max(len(botin_gris),len(regalo_gris), len(botin_original), len(regalo_original))
     botin = botin_gris
     regalo = regalo_gris
@@ -89,7 +89,7 @@ def conteo_imagen(string_imagen_original, string_imagen):
                 rareza_botin = botin[i].split('[')[1].split(']')[0]
             elif '(' in botin[i] and ')' in botin[i]:
                 rareza_botin = botin[i].split('(')[1].split(')')[0]
-            
+
             if not rareza_botin in diccionario_nivel.keys():
                 print('rareza de botin no encontrado')
                 if '[' in botin_original[i] and ']' in botin_original[i]:
@@ -97,7 +97,7 @@ def conteo_imagen(string_imagen_original, string_imagen):
                 elif '(' in botin_original[i] and ')' in botin_original[i]:
                     rareza_botin = botin_original[i].split('(')[1].split(')')[0]
                 print(rareza_botin)
-            
+
             nivel_botin = diccionario_nivel[rareza_botin]
 
             # nombre del jugador
@@ -147,7 +147,7 @@ def puntaje(data):
                 valor_puntaje += 1
             elif valor == 2:
                 numero_n2 += 1
-                valor_puntaje += 2
+                valor_puntaje += 4
             elif valor == 3:
                 numero_n3 += 1
                 valor_puntaje += 16
@@ -213,7 +213,7 @@ def add_error(args):
         print('>>> Comenzando por el conteo de imagenes')
         main(args)
         df = pd.read_csv('./output/output_%s.txt'%args.foldername)
-    
+
     try:
         df_error = pd.read_csv('./%s/error/error.txt'%args.foldername)
 
@@ -266,4 +266,3 @@ if __name__ == '__main__':
         main(args)
     else:
         add_error(args)
-        
