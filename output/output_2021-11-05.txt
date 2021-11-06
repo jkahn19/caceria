@@ -1,0 +1,63 @@
+Nombre,N1,N2,N3,N4,Total,Puntaje
+LordKanino19,8,6,0,0,14,32
+Vainilla,1,4,0,0,5,17
+R P D,0,0,0,0,0,0
+Jocs4,2,2,0,0,4,10
+Juan D98,0,1,1,0,2,20
+61JC,1,1,0,0,2,5
+Arkeus11,11,0,0,0,11,11
+Dark Falkor,10,1,0,0,11,14
+deathiro,0,1,0,0,1,4
+Duque Puf,3,0,0,0,3,3
+Conde Puf,0,0,0,0,0,0
+Marques Puf,0,0,0,0,0,0
+El Templari0,7,0,0,0,7,7
+FoodFarmer12,0,0,0,0,0,0
+HaRaKirY,0,0,0,0,0,0
+hirowiro,0,1,0,0,1,4
+HusKerss,0,0,0,0,0,0
+Joselito170,6,0,0,0,6,6
+L O N E Y 5,0,0,0,0,0,0
+MoRRiGaNC,0,2,0,0,2,8
+Nathy7,9,0,0,0,9,9
+Rpd2,1,2,1,2,6,153
+srce1,0,0,0,0,0,0
+theriver2007,10,0,0,0,10,10
+Vil Mentira,0,2,0,0,2,8
+RataD2Patas,14,1,0,0,15,18
+wirito,0,0,0,0,0,0
+001padre,0,0,0,0,0,0
+el poro 123,2,0,0,0,2,2
+KingAlexx27,0,0,0,0,0,0
+Leandro2505,0,0,0,0,0,0
+leito ortiz,3,1,0,0,4,7
+leonardo02,4,1,0,0,5,8
+melonidas 1,8,0,0,0,8,8
+MiguelDH,0,0,0,0,0,0
+WOLFBYCK9812,1,0,0,0,1,1
+001padre2,0,0,0,0,0,0
+ADADI,1,1,0,0,2,5
+adolfo22,0,0,0,0,0,0
+Anabell 21,7,1,0,0,8,11
+auxiliar 1,8,0,0,0,8,8
+Eraclium,0,2,0,0,2,8
+Freya2111,0,0,0,0,0,0
+GadrielS,0,0,0,0,0,0
+GalaicusGZ,4,1,0,0,5,8
+Goku 32,0,0,0,0,0,0
+Hogan bob,0,0,0,0,0,0
+Imp0st0r 882,6,3,0,0,9,18
+jos88,0,0,0,0,0,0
+jungle 01,0,0,0,0,0,0
+Jvillafuerte,1,0,0,1,2,65
+kim jennie06,0,0,0,0,0,0
+LOBO SERVERO,0,3,0,0,3,12
+lord dan49,0,0,0,0,0,0
+LordSerged,6,0,0,0,6,6
+MarisolXD123,0,0,0,0,0,0
+MaRk 25,0,0,0,0,0,0
+Mmark,1,0,0,0,1,1
+Roohtakr,0,0,0,0,0,0
+SoloGozalo,0,0,0,0,0,0
+vaspin,7,0,0,0,7,7
+Chuki 03,12,0,0,0,12,12

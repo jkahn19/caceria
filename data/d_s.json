@@ -1,23 +1,290 @@
 {
-
-    "001" : {
-        "name" : "LordKanino19",
-        "nivel" : 25,
-        "names" : ["LordKanino19"]
-    },
-
-    "002" : {
-        "name" : "Vainilla",
-        "nivel" : 25,
-        "names" : ["Vainilla"]
-    },
-    "003" : {
-        "name" : "R P D",
-        "nivel" : 25,
-        "names" : ["R P D", "rpd2"]
-    },
-
-    "Nombre":{"0":"LordKanino19","1":"Vainilla","2":"R P D","3":"Jocs4","4":"Juan D98","5":"61JC","6":"Arkeus11","7":"Dark Falkor","8":"deathiro","9":"Duque Puf","10":"Conde Puf","11":"Marques Puf","12":"El Templari0","13":"FoodFarmer12","14":"HaRaKirY","15":"hirowiro","16":"HusKerss","17":"Joselito170","18":"L O N E Y 5","19":"MoRRiGaNC","20":"Nathy7","21":"Rpd2","22":"srce1","23":"theriver2007","24":"Vil Mentira","25":"wirito","26":"001padre","27":"el poro 123","28":"KingAlexx27","29":"Leandro2505","30":"leito ortiz","31":"leonardo02","32":"melonidas 1","33":"MiguelDH","34":"WOLFBYCK9812","35":"001padre2","36":"ADADI","37":"adolfo22","38":"Anabell 21","39":"auxiliar 1","40":"Eraclium","41":"Freya2111","42":"GadrielS","43":"GalaicusGZ","44":"Goku 32","45":"Hogan bob","46":"Imp0st0r 882","47":"jos88","48":"jungle 01","49":"Jvillafuerte","50":"kim jennie06","51":"LOBO SERVERO","52":"lord dan49","53":"LordSerged","54":"MarisolXD123","55":"MaRk 25","56":"Mmark","57":"Roohtakr","58":"SoloGozalo","59":"vaspin"},
-    "Rango":{"0":5,"1":4,"2":4,"3":4,"4":4,"5":3,"6":3,"7":3,"8":3,"9":3,"10":3,"11":3,"12":3,"13":3,"14":3,"15":3,"16":3,"17":3,"18":3,"19":3,"20":3,"21":3,"22":2,"23":2,"24":3,"25":3,"26":2,"27":2,"28":2,"29":2,"30":2,"31":2,"32":2,"33":2,"34":2,"35":1,"36":1,"37":1,"38":1,"39":1,"40":1,"41":1,"42":1,"43":1,"44":1,"45":1,"46":1,"47":1,"48":1,"49":1,"50":1,"51":1,"52":1,"53":1,"54":1,"55":1,"56":1,"57":1,"58":1,"59":1},
-    "Nivel":{"0":25.0,"1":25.0,"2":25.0,"3":24.0,"4":25.0,"5":25.0,"6":25.0,"7":null,"8":25.0,"9":25.0,"10":25.0,"11":25.0,"12":24.0,"13":null,"14":18.0,"15":24.0,"16":25.0,"17":24.0,"18":25.0,"19":25.0,"20":25.0,"21":23.0,"22":22.0,"23":25.0,"24":25.0,"25":23.0,"26":25.0,"27":24.0,"28":25.0,"29":24.0,"30":24.0,"31":23.0,"32":23.0,"33":24.0,"34":23.0,"35":17.0,"36":22.0,"37":22.0,"38":22.0,"39":22.0,"40":25.0,"41":25.0,"42":22.0,"43":25.0,"44":20.0,"45":22.0,"46":25.0,"47":24.0,"48":20.0,"49":20.0,"50":20.0,"51":20.0,"52":20.0,"53":20.0,"54":25.0,"55":20.0,"56":25.0,"57":20.0,"58":12.0,"59":25.0}
+    "0":
+        {
+            "name": "LordKanino19",
+            "Nivel": 25,
+            "names": ["LordKanino19", "SoloGozalo"]
+        },
+    "1":
+        {
+            "name": "Vainilla",
+            "Nivel": 25,
+            "names": ["Vainilla"]
+        },
+    "2":
+        {
+            "name": "R P D",
+            "Nivel": 25,
+            "names": ["R P D", "Rpd2"]
+        },
+    "3":
+        {
+            "name": "Jocs4",
+            "Nivel": 24,
+            "names": ["Jocs4"]
+        },
+    "4":
+        {
+            "name": "Juan D98",
+            "Nivel": 25,
+            "names": ["Juan D98", "HaRaKirY", "FoodFarmer12"]
+        },
+    "5":
+        {
+            "name": "61JC",
+            "Nivel": 25,
+            "names": ["61JC"]
+        },
+    "6":
+        {
+            "name": "Arkeus11",
+            "Nivel": 25,
+            "names": ["Arkeus11"]
+        },
+    "7":
+        {
+            "name": "Dark Falkor",
+            "Nivel": 25,
+            "names": ["Dark Falkor"]
+        },
+    "8":
+        {
+            "name": "deathiro",
+            "Nivel": 25,
+            "names": ["deathiro", "wirito", "hirowiro"]
+        },
+    "9":
+        {
+            "name": "Duque Puf",
+            "Nivel": 25,
+            "names": ["Duque Puf", "Conde Puf", "Marques Puf"]
+        },
+    "12":
+        {
+            "name": "El Templari0",
+            "Nivel": 24,
+            "names": ["El Templari0"]
+        },
+    "16":
+        {
+            "name": "HusKerss",
+            "Nivel": 25,
+            "names": ["HusKerss"]
+        },
+    "17":
+        {
+            "name": "Joselito170",
+            "Nivel": 24,
+            "names": ["Joselito170"]
+        },
+    "18":
+        {
+            "name": "L O N E Y 5",
+            "Nivel": 25,
+            "names": ["L O N E Y 5"]
+        },
+    "19":
+        {
+            "name": "MoRRiGaNC",
+            "Nivel": 25,
+            "names": ["MoRRiGaNC"]
+        },
+    "20":
+        {
+            "name": "Nathy7",
+            "Nivel": 25,
+            "names": ["Nathy7"]
+        },
+    "22":
+        {
+            "name": "srce1",
+            "Nivel": 22,
+            "names": ["srce1"]
+        },
+    "23":
+        {
+            "name": "theriver2007",
+            "Nivel": 25,
+            "names": ["theriver2007"]
+        },
+    "24":
+        {
+            "name": "RataD2Patas",
+            "Nivel": 25,
+            "names": ["RataD2Patas", "Vil Mentira"]
+        },
+    "26":
+        {
+            "name": "001padre",
+            "Nivel": 25,
+            "names": ["001padre", "001padre2"]
+        },
+    "27":
+        {
+            "name": "el poro 123",
+            "Nivel": 24,
+            "names": ["el poro 123"]
+        },
+    "28":
+        {
+            "name": "KingAlexx27",
+            "Nivel": 25,
+            "names": ["KingAlexx27"]
+        },
+    "29":
+        {
+            "name": "Leandro2505",
+            "Nivel": 24,
+            "names": ["Leandro2505"]
+        },
+    "30":
+        {
+            "name": "leito ortiz",
+            "Nivel": 24,
+            "names": ["leito ortiz"]
+        },
+    "31":
+        {
+            "name": "leonardo02",
+            "Nivel": 23,
+            "names": ["leonardo02"]
+        },
+    "32":
+        {
+            "name": "melonidas 1",
+            "Nivel": 23,
+            "names": ["melonidas 1"]
+        },
+    "33":
+        {
+            "name": "MiguelDH",
+            "Nivel": 24,
+            "names": ["MiguelDH"]
+        },
+    "34":
+        {
+            "name": "WOLFBYCK9812",
+            "Nivel": 23,
+            "names": ["WOLFBYCK9812"]
+        },
+    "36":
+        {
+            "name": "ADADI",
+            "Nivel": 22,
+            "names": ["ADADI"]
+        },
+    "37":
+        {
+            "name": "adolfo22",
+            "Nivel": 22,
+            "names": ["adolfo22"]
+        },
+    "38":
+        {
+            "name": "Anabell 21",
+            "Nivel": 22,
+            "names": ["Anabell 21"]
+        },
+    "40":
+        {
+            "name": "Eraclium",
+            "Nivel": 25,
+            "names": ["Eraclium"]
+        },
+    "41":
+        {
+            "name": "Freya2111",
+            "Nivel": 25,
+            "names": ["Freya2111"]
+        },
+    "42":
+        {
+            "name": "GadrielS",
+            "Nivel": 22,
+            "names": ["GadrielS"]
+        },
+    "43":
+        {
+            "name": "GalaicusGZ",
+            "Nivel": 25,
+            "names": ["GalaicusGZ"]
+        },
+    "44":
+        {
+            "name": "Goku 32",
+            "Nivel": 20,
+            "names": ["Goku 32"]
+        },
+    "45":
+        {
+            "name": "Hogan bob",
+            "Nivel": 22,
+            "names": ["Hogan bob"]
+        },
+    "46":
+        {
+            "name": "Imp0st0r 882",
+            "Nivel": 25,
+            "names": ["Imp0st0r 882", "auxiliar 1"]
+        },
+    "48":
+        {
+            "name": "jungle 01",
+            "Nivel": 20,
+            "names": ["jungle 01"]
+        },
+    "49":
+        {
+            "name": "Jvillafuerte",
+            "Nivel": 20,
+            "names": ["Jvillafuerte"]
+        },
+    "51":
+        {
+            "name": "LOBO SERVERO",
+            "Nivel": 20,
+            "names": ["LOBO SERVERO"]
+        },
+    "52":
+        {
+            "name": "lord dan49",
+            "Nivel": 20,
+            "names": ["lord dan49"]
+        },
+    "53":
+        {
+            "name": "LordSerged",
+            "Nivel": 20,
+            "names": ["LordSerged"]
+        },
+    "54":
+        {
+            "name": "MarisolXD123",
+            "Nivel": 25,
+            "names": ["MarisolXD123"]
+        },
+    "56":
+        {
+            "name": "Mmark",
+            "Nivel": 25,
+            "names": ["Mmark", "Mmark"]
+        },
+    "57":
+        {
+            "name": "Roohtakr",
+            "Nivel": 20,
+            "names": ["Roohtakr"]
+        },
+    "59":
+        {
+            "name": "vaspin",
+            "Nivel": 25,
+            "names": ["vaspin"]
+        },
+    "60":
+        {
+            "name": "Chuki 03",
+            "Nivel": 23,
+            "names": ["Chuki 03"]
+        }
 }
