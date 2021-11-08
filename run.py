@@ -22,6 +22,7 @@ puntaje = {1:1, 2:4, 3:16}
 lista_de_imagenes = []
 
 filename_miembros = './data/miembros-D_S.csv'
+folder_name = 'output_nov'
 df_D_S = pd.read_csv(filename_miembros)
 
 
@@ -207,27 +208,29 @@ def depurar(data):
 
 def add_error(args):
     try:
-        df = pd.read_csv('./output/output_%s.txt'%args.foldername)
+        df = pd.read_csv(f'./{folder_name}/output_%s.csv'%args.foldername)
     except FileNotFoundError as e:
         print(e)
         print('>>> Comenzando por el conteo de imagenes')
         main(args)
-        df = pd.read_csv('./output/output_%s.txt'%args.foldername)
+        df = pd.read_csv(f'./{folder_name}/output_%s.csv'%args.foldername)
 
     try:
-        df_error = pd.read_csv('./%s/error/error.txt'%args.foldername)
-
+        df_error = pd.read_csv('./%s/error/error.csv'%args.foldername)
         for name in df_error['Nombre'].values:
             filtro = df['Nombre'] == name
-            valores = df_error.loc[df_error['Nombre']==name]
-            df.loc[filtro, 'N1'] += valores['N1'].values[0]
-            df.loc[filtro, 'N2'] += valores['N2'].values[0]
-            df.loc[filtro, 'N3'] += valores['N3'].values[0]
-            df.loc[filtro, 'N4'] += valores['N4'].values[0]
-            df.loc[filtro, 'Total'] += valores['Total'].values[0]
-            df.loc[filtro, 'Puntaje'] += valores['Puntaje'].values[0]
+            valores = df_error.loc[df_error['Nombre'] == name,:]
+            df.loc[filtro, 'N1'] += valores['N1']
+            df.loc[filtro, 'N2'] += valores['N2']
+            df.loc[filtro, 'N3'] += valores['N3']
+            df.loc[filtro, 'N4'] += valores['N4']
 
-        df.to_csv('./output/output_%s_error.txt'%args.foldername, index=False)
+            aux = valores.loc[:,['N1','N2','N3','N4']].values[0]
+            n_aux = len(aux)
+            df.loc[filtro, 'Total'] += aux.sum()
+            df.loc[filtro, 'Puntaje'] += np.sum([x * 4**y for x, y in zip(aux, range(n_aux))])
+
+        df.to_csv(f'./{folder_name}/output_%s_error.csv'%args.foldername, index=False)
     except FileNotFoundError as e:
         print(e)
         return 0
@@ -245,7 +248,7 @@ def main(args):
     dataframe = puntaje(data)
     dataframe = depurar(dataframe)
     print('>>> Guardando Resultados')
-    dataframe.to_csv('./output/output_%s.txt'%foldername, index=False)
+    dataframe.to_csv(f'./{folder_name}/output_%s.csv'%foldername, index=False)
     n_error = len(img_error)
     if n_error != 0:
         # create error folder and move the images to the error folder
