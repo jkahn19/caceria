@@ -5,3 +5,4 @@ capturas
 *.pyc
 
 .ipynb_checkpoints
+venv/
