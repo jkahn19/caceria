@@ -220,10 +220,10 @@ def add_error(args):
         for name in df_error['Nombre'].values:
             filtro = df['Nombre'] == name
             valores = df_error.loc[df_error['Nombre'] == name,:]
-            df.loc[filtro, 'N1'] += valores['N1']
-            df.loc[filtro, 'N2'] += valores['N2']
-            df.loc[filtro, 'N3'] += valores['N3']
-            df.loc[filtro, 'N4'] += valores['N4']
+            df.loc[filtro, 'N1'] += valores['N1'].values[0]
+            df.loc[filtro, 'N2'] += valores['N2'].values[0]
+            df.loc[filtro, 'N3'] += valores['N3'].values[0]
+            df.loc[filtro, 'N4'] += valores['N4'].values[0]
 
             aux = valores.loc[:,['N1','N2','N3','N4']].values[0]
             n_aux = len(aux)
